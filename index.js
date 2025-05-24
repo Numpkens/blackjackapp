@@ -2,35 +2,19 @@ let firstCard = 10;
 let secondCard = 4;
 
 let sum = firstCard + secondCard;
-console.log(sum);
+let hasBlackJack = false;
 
-if (sum < 21) {
-    console.log("Do you want to draw a new card")
+let isAlive = true;
+
+if (sum <= 20) {
+    console.log("Do you want to draw a new card");
 }
-else if (sum === 21){
-    console.log("Hell ya! You have Blackjack!")
-}
-else (sum > 21) {
-    console.log("Oh! No!")
-}
-
-
-let age = 22;
-
-if (age >= 21){
-    console.log("Yes you may enter");
+else if (sum === 21) {
+    console.log("Hell ya! You have Blackjack!");
 }
 else {
-    console.log("No No NO");
-}
+    console.log("Oh! No!");
+    isAlive = false;
+};
 
-age = 100;
-if (age < 100) {
-    console.log("no");
-}
-else if (age == 100){
-    console.log("Here is your card")
-}
-else (age > 100){
-    console.log("you already have one")
-}
+console.log(isAlive);
