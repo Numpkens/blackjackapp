@@ -1,11 +1,12 @@
 body {
-    background-image: url('table.png');
+    background-image: url('images/table.png');
     background-size: cover;
     background-repeat: repeat;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'sans-serif';
     color: white;
     text-align: center;
     font-size: 30px;
+    font-weight: bold;
     }
 
 
@@ -25,10 +26,24 @@ h1 {
 #start-btn {
     background: goldenrod;
     color: #016f32;
-    width: 200px;
+    width: 300px;
     font-weight: bold;
     padding-top: 5px;
     padding-bottom: 5px;
     border: none;
     border-radius: 5px;
+    font-size: 24px;
 }
+
+#new-btn {
+    background: goldenrod;
+    color: #016f32;
+    width: 300px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 24px;
+}
+
