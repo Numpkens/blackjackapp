@@ -7,40 +7,75 @@ body {
   text-align: center;
   font-size: 30px;
   font-weight: bold;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
   color: rgb(245, 206, 108);
   font-size: 72px;
   text-align: center;
+  margin-bottom: 10px;
 }
 
-#message-el {
+.container {
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 15px;
+  width: 500px;
+  box-shadow: 0 0 15px black;
+}
+
+input[type="number"] {
+  width: 80%;
+  font-size: 24px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+#tipButtons button {
+  background-color: goldenrod;
+  color: #016f32;
+  font-weight: bold;
+  font-size: 24px;
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+#tipButtons button:hover,
+#tipButtons button:focus {
+  background-color: #ffcc00;
+}
+
+#calculateTip {
+  margin-top: 20px;
+  background-color: darkorange;
   color: white;
-  text-align: center;
-  font-size: 36px;
+  font-size: 28px;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
-#start-btn {
-  background: goldenrod;
-  color: #016f32;
-  width: 300px;
-  font-weight: bold;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  border: none;
-  border-radius: 5px;
-  font-size: 24px;
+#tipOutput {
+  display: block;
+  margin-top: 20px;
+  font-size: 48px;
+  color: #90ee90;
 }
 
-#new-btn {
-  background: goldenrod;
-  color: #016f32;
-  width: 300px;
-  font-weight: bold;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  border: none;
-  border-radius: 5px;
-  font-size: 24px;
+/* Selected button stays highlighted */
+.selected {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  outline: 3px solid #ffd700;
+  box-shadow: 0 0 10px #ffd700;
 }
